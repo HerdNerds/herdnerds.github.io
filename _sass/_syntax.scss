@@ -5,7 +5,6 @@
 /*
    Pygments.rb and Rouge
    ========================================================================== */
-
 .linenos,
 .code {
 	padding: 0;
@@ -13,9 +12,16 @@
 	border-bottom: 0 solid transparent;
 }
 .linenodiv {
-  @include font-size(16);
+ 	@include font-size(16);
 }
 
+
+.highlighttable {
+	tr:hover>td,
+	tr:hover>th {
+		background: transparent
+	}
+}
 .highlight {
 	overflow-x: auto;
 	@include font-size(16);
@@ -29,14 +35,6 @@
 	&:hover {
 		border: 1px solid $form-border-color-hover;
 	}
-}
-
-.highlighttable {
-	tr:hover>td,
-	tr:hover>th {
-		background: transparent
-	}
-}
 
 .hll { background-color: #ffffcc }
 
@@ -133,4 +131,5 @@
     background-color:transparent;
   };
   background-color:white; //Background color white
+}
 }
