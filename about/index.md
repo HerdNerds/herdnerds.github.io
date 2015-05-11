@@ -10,6 +10,7 @@ image:
   thumb:
 ads: false
 comments: true
+categories: About
 ---
 HerdNerds is a group of electronics and robotics enthusiasts at Playtika Santa Monica.
 

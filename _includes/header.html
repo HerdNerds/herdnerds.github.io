@@ -1,7 +1,7 @@
-<header id="masthead">
+<header id="masthead" {% if page.layout != "home" %}style="background-image:url({{ site.url }}/images/{{ site.header.image }})" {% endif %}>
   <div class="inner-wrap">
-    <a href="{{ site.url }}/" class="site-title">{{ site.title }}</a>
-    <nav role="navigation" class="menu top-menu">
+	  <a href="{{ site.url }}/" class="{% if page.layout != "home" %}site-title{% else %}site-title-home{% endif %}">{{ site.title }}</a>
+	<nav role="navigation" class="menu {% if page.layout == "home" %} top-menu-home {% else %} top-menu {% endif %}">
         {% include navigation.html %}
     </nav>
   </div><!-- /.inner-wrap -->

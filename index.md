@@ -1,9 +1,10 @@
 ---
-layout: article
+layout: home
 permalink: /
 title: "Welcome to HerdNerds"
+subtitle: "The Electronics &amp; Robotics Club"
 image:
-  feature: wood-texture-1600x800.jpg
+  feature: circuit_technology_wallpaper_50_cover_background-fullsize.jpg
 ---
 
 #This is a test#

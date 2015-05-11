@@ -26,12 +26,18 @@
 	padding: (.25 * $masthead-height) 0; // fourth the height to center vertically
 	height: $masthead-height;
 	text-decoration: none;
-	color: $black;
+	color: yellow;
 	font-family: $alt-font;
 	font-weight: 700;
-	@include font-size(20,no);
+	@include font-size(24);
+//	@include font-size(20,no);
 	line-height: .5 * $masthead-height; // half the height to center vertically
 	text-transform: uppercase;
+}
+
+.site-title-home {
+	@extend .site-title;
+	color: $black;
 }
 
 
@@ -84,6 +90,34 @@
 /* Top menu navigation */
 
 .top-menu {
+	display: none;
+	position: relative;
+	@include media($medium) {
+		@include span-columns(12);
+	}
+	@include media($large) {
+		@include span-columns(7);
+		ul {
+			position: absolute;
+			right: 0;
+		}
+	}
+	.home,
+	.sub-menu-item {
+		display: none;
+	}
+	li {
+		a {
+			font-weight: 700;
+			@include font-size(16,no);
+			line-height: .5 * $masthead-height; // half the height to center vertically
+			color: yellow;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.top-menu-home {
 	display: none;
 	position: relative;
 	@include media($medium) {
@@ -232,7 +266,7 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	text-align: center;
-	color: $white;
+	color: yellow;
 	@include media($large) {
 		background-size: cover;
 	}
