@@ -6,7 +6,7 @@ logo: # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale: en_US
 url: //herdnerds.github.io
-# url: //localhost:4000
+#url: //localhost:4000
 #host: 127.0.0.1
 #port: 4000
 
